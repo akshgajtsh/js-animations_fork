@@ -4,10 +4,10 @@ accordions_animation.forEach(accordion_animarion => {
         const text = accordion_animarion.querySelector('.list-content');
         if (text.classList.contains('open')) {
             text.classList.remove('open');
-            text.style.height = text.scrollHeight + 'px';
+            text.style.height = '0px';
         } else {
             text.classList.add('open');
-            text.style.height = '0px';
+            text.style.height = text.scrollHeight + 'px';
         }
     });
 });
